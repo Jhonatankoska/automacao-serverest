@@ -1,0 +1,24 @@
+{
+  "name": "automacao-serverest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jhonatankoska/automacao-serverest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Jhonatankoska/automacao-serverest/issues"
+  },
+  "homepage": "https://github.com/Jhonatankoska/automacao-serverest#readme",
+  "devDependencies": {
+    "cypress": "^14.2.0"
+  }
+}
