@@ -12,7 +12,7 @@ describe("Validação dos elementos da página minha lista de produtos", () => {
   beforeEach(() => {
     LoginPage.login();
     PaginaInicialPage.clicarCardPrimeiroProduto();
-    DetalhesProdutoPage.validarPaginaDetalhesProduto();
+    DetalhesProdutoPage.validarBotaoAdicionarALista();
   });
 
   it("Validação do titulo principal", () => {

@@ -23,8 +23,12 @@ class PaginaInicialPage {
   }
 
   clicarCardPrimeiroProduto() {
-    cy.get(":nth-child(1) > .card-body > :nth-child(1) > .imagem").click();
-    cy.validarRota("/detalhesProduto", 200);
+    cy.get(".card")
+      .eq(0)
+      .within(() => {
+        cy.get("img").click();
+        cy.validarRota("/detalhesProduto", 200);
+      });
   }
 }
 
