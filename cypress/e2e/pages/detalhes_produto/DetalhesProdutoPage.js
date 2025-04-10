@@ -17,11 +17,14 @@ class DetalhesProdutoPage {
   }
 
   validarBotaoAdicionarALista() {
-    cy.get('[data-testid="adicionarNaLista"]').should(
-      "have.text",
-      "Adicionar a lista"
-    );
-    cy.get('[data-testid="adicionarNaLista"]').click();
+    cy.get(":nth-child(1) > .row > :nth-child(1)")
+      .eq(0)
+      .within(() => {
+        cy.get('[data-testid="adicionarNaLista"]')
+          .should("have.text", "Adicionar a lista")
+          .click();
+      });
+
     cy.validarRota("/minhaListaDeProdutos", 200);
   }
 }
