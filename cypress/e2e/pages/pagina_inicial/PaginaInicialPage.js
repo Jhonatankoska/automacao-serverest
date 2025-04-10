@@ -23,7 +23,7 @@ class PaginaInicialPage {
   }
 
   clicarCardPrimeiroProduto() {
-    cy.get(".card")
+     cy.get(".card")
       .eq(0)
       .within(() => {
         cy.get("img").click();
