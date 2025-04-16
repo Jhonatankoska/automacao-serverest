@@ -8,6 +8,7 @@ Este repositório contém testes automatizados utilizando **Cypress** com o padr
 
 ## 📂 Estrutura de Pastas
 
+```
 /cypress
  ├── cypress.config.js                          # Configurações do Cypress
  ├── e2e/
@@ -35,7 +36,7 @@ Este repositório contém testes automatizados utilizando **Cypress** com o padr
  │   ├── workflows/
  │   │   ├── cypress.yml                        # Pipeline de CI com GitHub Actions
  ├── README.md                                  # Documentação do projeto
-
+```
 
 ------------------------------------------------------------------------------------------------------
 
